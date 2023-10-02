@@ -7,7 +7,9 @@ import torch
 from pathlib import Path
 import warnings
 
-annotator_ckpts_path = os.path.join(os.path.dirname(__file__), 'ckpts')
+import folder_paths
+
+annotator_ckpts_path = folder_paths.get_folder_paths('ControlNet')[0]
 
 here = Path(__file__).parent.resolve()
 
